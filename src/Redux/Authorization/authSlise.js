@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { register, loginization, logOut, refreshUser } from './operations';
-import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 // це для того щоб виводити помилки в тостах
@@ -12,12 +11,6 @@ const handlePending = state => {
 const handleRejected = (state, action) => {
   state.isLoading = false;
   state.error = action.payload;
-
-  toast.error(
-    `${action.payload}` === 'Network Error'
-      ? `${action.payload}`
-      : 'Something went wrong. Check your data and try again'
-  );
 };
 
 const authSlise = createSlice({
@@ -71,6 +64,7 @@ const authSlise = createSlice({
       })
       .addCase(refreshUser.rejected, (state, action) => {
         state.isRefreshing = false;
+        state.token = null;
       });
   },
 });
