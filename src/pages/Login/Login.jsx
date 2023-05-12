@@ -35,7 +35,7 @@ export default function Login() {
         >
           {' '}
           <TitleReg>Log in</TitleReg>
-          
+
           <FormWrap.Item
             name="email"
             rules={[
@@ -79,3 +79,5 @@ export default function Login() {
     </section>
   );
 }
+
+// Діма Берестень

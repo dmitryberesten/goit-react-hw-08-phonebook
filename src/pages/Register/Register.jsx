@@ -120,7 +120,7 @@ export default function Register() {
           >
             <InputPassword prefix={<RegPassWord />} />
           </Label>
-          
+
           <Label>
             {' '}
             <SubmitButton type="primary" htmlType="submit">
@@ -136,3 +136,5 @@ export default function Register() {
     </section>
   );
 }
+
+// Діма Берестень
