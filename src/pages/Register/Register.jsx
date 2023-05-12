@@ -136,5 +136,3 @@ export default function Register() {
     </section>
   );
 }
-
-// Діма Берестень

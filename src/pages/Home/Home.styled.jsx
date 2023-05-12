@@ -52,14 +52,12 @@ export const HomeLink = styled(Link)`
 export const Section = styled.section`
   padding-top: 40px;
   height: 40em;
-
   background-image: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.96),
       rgba(255, 255, 255, 0.97)
     ),
     url(${img});
-
   border-radius: 1.1em;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,7 +66,6 @@ export const Section = styled.section`
 
 export const HomeEdit = styled(EditOutlined)`
   animation: 2.5s ${fadeAnimation};
-
   svg {
     color: #1677ff;
     width: 220px;
@@ -80,7 +77,6 @@ export const HomeEdit = styled(EditOutlined)`
 
 export const HomePhoneIcon = styled(PhoneOutlined)`
   animation: 2s ${fadeAnimation};
-
   svg {
     color: #1677ff;
     width: 220px;
@@ -92,7 +88,6 @@ export const HomePhoneIcon = styled(PhoneOutlined)`
 
 export const HomeUserGroup = styled(UsergroupAddOutlined)`
   animation: 1.5s ${fadeAnimation};
-
   svg {
     color: #1677ff;
     display: block;
@@ -104,7 +99,7 @@ export const HomeUserGroup = styled(UsergroupAddOutlined)`
 
 export const HomeContactList = styled(ContactsOutlined)`
   animation: 1s ${fadeAnimation};
-  
+
   svg {
     color: #1677ff;
     width: 220px;

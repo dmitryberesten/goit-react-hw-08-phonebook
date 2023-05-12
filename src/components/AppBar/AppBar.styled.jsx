@@ -19,12 +19,10 @@ export const Link = styled(NavLink)`
   :nth-child(2n + 1) {
     margin-right: 20px;
   }
-
   &.active {
     color: #3a97e8;
     border-top: 2px solid #3a97e8;
   }
-
   text-decoration: none;
   color: inherit;
   font-size: 18px;

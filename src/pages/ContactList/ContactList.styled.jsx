@@ -47,7 +47,7 @@ export const InputForm = styled(Input)`
 
 export const ModalRedact = styled(Modal)`
   text-align: center;
-  
+
   .ant-modal-content {
     width: 330px;
     position: absolute;

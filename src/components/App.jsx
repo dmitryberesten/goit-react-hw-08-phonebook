@@ -1,5 +1,5 @@
 import { GlobalStyle } from './GlobalStyle';
-import { Route, Routes, Navigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, lazy } from 'react';
@@ -51,7 +51,6 @@ export const App = () => {
               />
             }
           />
-          <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
 
@@ -65,5 +64,3 @@ export const App = () => {
     <Spiner />
   );
 };
-
-// Діма Берестень

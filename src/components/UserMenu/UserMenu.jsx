@@ -11,18 +11,14 @@ export const UserMenu = () => {
 
   return (
     <Wrap>
-
       {/* для аватарки використовуємо першу літеру email */}
       <Avatar>{email.slice(0, 1).toUpperCase()}</Avatar>
-
       <p>{email}</p>
-
       {/* для виходу використовуємо іконку */}
       <Button type="primary" onClick={() => dispatch(logOut())}>
         <LogoutOutlined /> Log out
-      </Button>{' '} {/* пробіл для відступу */}
+      </Button>{' '}
+      {/* пробіл для відступу */}
     </Wrap>
   );
 };
-
-// Діма Берестень

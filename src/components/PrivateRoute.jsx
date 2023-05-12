@@ -11,5 +11,3 @@ export const PrivateRoute = ({ component: Component, redirectTo: addres }) => {
   // якщо залогінений, то рендеримо компонент
   return shouldRedirect ? <Navigate to={addres} /> : Component;
 };
-
-// Діма Берестень

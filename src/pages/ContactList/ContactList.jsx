@@ -96,7 +96,6 @@ export default function Contactlist() {
                 <EditOutlined />
                 Edit
               </ButtonRedact>
-
               <Popconfirm
                 title="Are you sure delete this task?"
                 okText="Yes"
@@ -137,5 +136,3 @@ export default function Contactlist() {
     </section>
   );
 }
-
-// Діма Берестень

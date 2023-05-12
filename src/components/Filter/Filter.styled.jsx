@@ -12,7 +12,6 @@ export const FilterInput = styled(Input)`
   font-size: 20px;
   border: 1px solid #000000;
   border-radius: 7px;
-
   transition: box-shadow cubic-bezier(0.17, 0.67, 0.86, 0.57) 300ms;
 `;
 

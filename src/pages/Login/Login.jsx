@@ -35,7 +35,6 @@ export default function Login() {
         >
           {' '}
           <TitleReg>Log in</TitleReg>
-
           <FormWrap.Item
             name="email"
             rules={[
@@ -48,7 +47,6 @@ export default function Login() {
           >
             <InputForm prefix={<UserIcon />} placeholder="Email" />
           </FormWrap.Item>
-
           <FormWrap.Item
             name="password"
             rules={[
@@ -64,7 +62,6 @@ export default function Login() {
               placeholder="Password"
             />
           </FormWrap.Item>
-
           <FormWrap.Item>
             <LogButton type="primary" htmlType="submit">
               Log in
@@ -73,11 +70,8 @@ export default function Login() {
               Or <Link to="/register">register now</Link>
             </RegLink>
           </FormWrap.Item>
-
         </FormWrap>
       </Container>
     </section>
   );
 }
-
-// Діма Берестень

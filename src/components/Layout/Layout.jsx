@@ -5,9 +5,9 @@ import { Outlet } from 'react-router-dom';
 export const Layout = () => {
   return (
     <>
-      {' '} {/* для того щоб AppBar не перекривав контент */}
+      {' '}
+      {/* для того щоб AppBar не перекривав контент */}
       <AppBar />
-
       {/* для лінивої загрузки */}
       <Suspense fallback={null}>
         <Outlet />
@@ -15,5 +15,3 @@ export const Layout = () => {
     </>
   );
 };
-
-// Діма Берестень

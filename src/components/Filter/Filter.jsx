@@ -20,5 +20,3 @@ export const Filter = () => {
     </WrapperFiler>
   );
 };
-
-// Діма Берестень
