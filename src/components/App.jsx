@@ -65,3 +65,5 @@ export const App = () => {
     <Spiner />
   );
 };
+
+// Діма Берестень
