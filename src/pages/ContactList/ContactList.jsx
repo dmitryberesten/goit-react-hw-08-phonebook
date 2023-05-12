@@ -71,7 +71,7 @@ export default function Contactlist() {
           {' '}
           {/* якщо контактів немає, то виводимо заголовок, якщо є, то виводимо фільтр */}
           {contacts.length < 1 ? (
-            <Title>Add you firs contact</Title>
+            <Title>Add your first contact</Title>
           ) : (
             <Filter />
           )}
