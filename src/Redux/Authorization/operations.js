@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { toast } from 'react-toastify';
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
 const setAuthHeader = token =>
@@ -56,14 +55,6 @@ export const refreshUser = createAsyncThunk(
       const response = await axios.get('/users/current');
       return response.data;
     } catch (e) {
-      if (e.response && e.response.status === 401) {
-        cleanAuthHeader();
-      }
-      toast.error(
-        `${e.message}` === 'Network Error'
-          ? `${e.message}`
-          : 'Something went wrong. Check your data and try again'
-      );
       return rejectWithValue(e.message);
     }
   }
